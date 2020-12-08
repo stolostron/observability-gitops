@@ -99,7 +99,7 @@ data:
             }
           ],
           "thresholds": "1,1",
-          "title": "PVCs > $capacity% Used",
+          "title": "Number of PVCs > $capacity% Used",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -268,7 +268,7 @@ data:
             }
           ],
           "thresholds": "1,1",
-          "title": "Unbound PVCs",
+          "title": "Number of Unbound PVCs",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
