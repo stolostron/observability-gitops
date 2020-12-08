@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - custom-kubernetes-pvc-dashboard.yaml
 - custom-metrics-whitelist.yaml
+- custom-number-of-clusters.yaml

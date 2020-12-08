@@ -52,7 +52,7 @@ data:
             "h": 6,
             "w": 6,
             "x": 0,
-            "y": 3
+            "y": 0
           },
           "id": 6,
           "interval": null,
@@ -71,6 +71,7 @@ data:
           "maxDataPoints": 100,
           "nullPointMode": "connected",
           "nullText": null,
+          "options": {},
           "postfix": "",
           "postfixFontSize": "50%",
           "prefix": "",
@@ -91,7 +92,6 @@ data:
           "tableColumn": "",
           "targets": [
             {
-              "$$hashKey": "object:371",
               "expr": "sum((((kubelet_volume_stats_capacity_bytes-kubelet_volume_stats_available_bytes) / kubelet_volume_stats_capacity_bytes)*100)>bool $capacity)",
               "format": "time_series",
               "intervalFactor": 1,
@@ -117,13 +117,14 @@ data:
           "fontSize": "100%",
           "gridPos": {
             "h": 6,
-            "w": 6,
+            "w": 9,
             "x": 6,
-            "y": 3
+            "y": 0
           },
           "hideTimeOverride": false,
           "id": 15,
           "links": [],
+          "options": {},
           "pageSize": null,
           "repeat": null,
           "repeatDirection": "h",
@@ -187,7 +188,6 @@ data:
           ],
           "targets": [
             {
-              "$$hashKey": "object:417",
               "expr": "((kubelet_volume_stats_capacity_bytes-kubelet_volume_stats_available_bytes) / kubelet_volume_stats_capacity_bytes * 100)>$capacity",
               "format": "table",
               "instant": true,
@@ -220,8 +220,8 @@ data:
           "gridPos": {
             "h": 6,
             "w": 6,
-            "x": 12,
-            "y": 3
+            "x": 0,
+            "y": 6
           },
           "id": 13,
           "interval": null,
@@ -240,6 +240,7 @@ data:
           "maxDataPoints": 100,
           "nullPointMode": "connected",
           "nullText": null,
+          "options": {},
           "postfix": "",
           "postfixFontSize": "50%",
           "prefix": "",
@@ -260,7 +261,6 @@ data:
           "tableColumn": "",
           "targets": [
             {
-              "$$hashKey": "object:463",
               "expr": "sum(kube_persistentvolumeclaim_status_phase{phase=\"Bound\"}!=bool 1)",
               "format": "time_series",
               "intervalFactor": 1,
@@ -286,12 +286,13 @@ data:
           "fontSize": "100%",
           "gridPos": {
             "h": 6,
-            "w": 6,
-            "x": 18,
-            "y": 3
+            "w": 9,
+            "x": 6,
+            "y": 6
           },
           "id": 17,
           "links": [],
+          "options": {},
           "pageSize": null,
           "scroll": true,
           "showHeader": true,
@@ -353,7 +354,6 @@ data:
           ],
           "targets": [
             {
-              "$$hashKey": "object:509",
               "expr": "kube_persistentvolumeclaim_status_phase{phase=\"Bound\", namespace=\"open-cluster-management-observability\"}!=1",
               "format": "table",
               "instant": true,
