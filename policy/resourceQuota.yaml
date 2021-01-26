@@ -5,5 +5,5 @@ metadata:
   namespace: open-cluster-management-observability
 spec:
   hard:
-    cpu: "2"
-    memory: "7Gi"
+    cpu: "5.25"
+    memory: "12Gi"
