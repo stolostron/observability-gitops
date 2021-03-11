@@ -1,7 +1,7 @@
 
 This repository contains [Open Cluster Management Observability](https://github.com/open-cluster-management/multicluster-observability-operator) examples of GitOps.
 
-# Tool Requirements
+## Tool Requirements
 
 - [yamllint](https://github.com/adrienverge/yamllint)
 ## Examples
