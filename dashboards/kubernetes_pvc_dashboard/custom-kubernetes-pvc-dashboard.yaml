@@ -391,7 +391,7 @@ data:
             "regex": "",
             "skipUrlSync": false,
             "type": "datasource"
-          },  
+          },
           {
             "allValue": null,
             "current": {
