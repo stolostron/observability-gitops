@@ -1,0 +1,12 @@
+apiVersion: observability.open-cluster-management.io/v1beta1
+kind: MultiClusterObservability
+metadata:
+  annotations:
+    mco-thanos-without-resources-requests: "true"
+  name: observability
+spec:
+  storageConfigObject:
+    metricObjectStorage:
+      name: thanos-object-storage
+      key: thanos.yaml
+    statefulSetSize: 4Gi
