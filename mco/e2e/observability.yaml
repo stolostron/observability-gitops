@@ -9,11 +9,11 @@ spec:
   retentionConfig: {}
   storageConfig:
     alertmanagerStorageSize: 1Gi
-    compactStorageSize: 2Gi
+    compactStorageSize: 4Gi
     metricObjectStorage:
       key: thanos.yaml
       name: thanos-object-storage
-    receiveStorageSize: 2Gi
+    receiveStorageSize: 4Gi
     ruleStorageSize: 1Gi
-    storageClass: standard
+    storageClass: gp2
     storeStorageSize: 1Gi
