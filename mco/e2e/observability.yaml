@@ -5,8 +5,15 @@ metadata:
     mco-thanos-without-resources-requests: "true"
   name: observability
 spec:
-  storageConfigObject:
+  observabilityAddonSpec: {}
+  retentionConfig: {}
+  storageConfig:
+    alertmanagerStorageSize: 1Gi
+    compactStorageSize: 2Gi
     metricObjectStorage:
-      name: thanos-object-storage
       key: thanos.yaml
-    statefulSetSize: 4Gi
+      name: thanos-object-storage
+    receiveStorageSize: 2Gi
+    ruleStorageSize: 1Gi
+    storageClass: standard
+    storeStorageSize: 1Gi
