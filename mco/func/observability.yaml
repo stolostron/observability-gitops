@@ -6,6 +6,8 @@ metadata:
     mco-thanos-without-resources-requests: "true"
   name: observability
 spec:
+  nodeSelector:
+    kubernetes.io/os: linux
   observabilityAddonSpec: {}
   retentionConfig: {}
   storageConfig:
