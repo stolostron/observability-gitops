@@ -1,10 +1,10 @@
 apiVersion: observability.open-cluster-management.io/v1beta2
 kind: MultiClusterObservability
 metadata:
-  annotations:
-    mco-thanos-without-resources-requests: "true"
   name: observability
 spec:
+  nodeSelector:
+    kubernetes.io/os: linux
   observabilityAddonSpec: {}
   retentionConfig: {}
   storageConfig:
