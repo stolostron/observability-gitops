@@ -13,4 +13,5 @@ spec:
     metricObjectStorage:
       key: thanos.yaml
       name: thanos-object-storage
+    statefulSetSize: 1Gi
     statefulSetStorageClass: gp2
