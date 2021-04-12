@@ -2,6 +2,7 @@ apiVersion: observability.open-cluster-management.io/v1beta1
 kind: MultiClusterObservability
 metadata:
   name: observability
+  annotations:
 spec:
   nodeSelector:
     kubernetes.io/os: linux
