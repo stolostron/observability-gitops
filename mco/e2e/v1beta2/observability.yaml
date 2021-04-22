@@ -7,6 +7,7 @@ spec:
   nodeSelector:
     kubernetes.io/os: linux
   observabilityAddonSpec: {}
+  resources: {}
   retentionConfig:
     blockDuration: 3h
     cleanupInterval: 6m
