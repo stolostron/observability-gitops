@@ -6,8 +6,16 @@ metadata:
 spec:
   nodeSelector:
     kubernetes.io/os: linux
-  observabilityAddonSpec: {}
-  resources: {}
+  observabilityAddonSpec:
+    enableMetrics: true
+    interval: 30
+    resources:
+      limits:
+        cpu: 200m
+        memory: 700Mi
+      requests:
+        cpu: 200m
+        memory: 200Mi
   retentionConfig:
     blockDuration: 3h
     cleanupInterval: 6m
