@@ -7,3 +7,4 @@ data:
   metrics_list.yaml: |
     names:
       - node_memory_Active_bytes
+      - rest_client_requests_total-
