@@ -4,6 +4,7 @@ metadata:
   name: observability
   annotations:
 spec:
+  cacheConfig: {}
   nodeSelector:
     kubernetes.io/os: linux
   observabilityAddonSpec:
