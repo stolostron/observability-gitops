@@ -27,11 +27,11 @@ spec:
     retentionResolutionRaw: 6d
   storageConfig:
     alertmanagerStorageSize: 1Gi
-    compactStorageSize: 4Gi
+    compactStorageSize: 1Gi
     metricObjectStorage:
       key: thanos.yaml
       name: thanos-object-storage
-    receiveStorageSize: 4Gi
+    receiveStorageSize: 1Gi
     ruleStorageSize: 1Gi
     storageClass: gp2
     storeStorageSize: 1Gi
