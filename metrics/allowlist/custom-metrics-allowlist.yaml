@@ -6,5 +6,7 @@ metadata:
 data:
   metrics_list.yaml: |
     names:
-      - node_memory_Active_bytes
-      - -rest_client_requests_total
+      - node_memory_Active_bytes # this custom metric is being collected from your managed clusters
+      - -rest_client_requests_total # this default metric is not being collected from your managed clusters
+    matches:
+      - -__name__="go_goroutines",job="apiserver" # this default metric is not being collected from your managed clusters
