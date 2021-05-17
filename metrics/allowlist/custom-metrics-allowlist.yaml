@@ -8,3 +8,5 @@ data:
     names:
       - node_memory_Active_bytes
       - -rest_client_requests_total
+    matches:
+      - -__name__="go_goroutines",job="apiserver"
