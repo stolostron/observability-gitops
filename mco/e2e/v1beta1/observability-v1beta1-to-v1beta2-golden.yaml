@@ -23,9 +23,9 @@ spec:
     cleanupInterval: 5m
     deleteDelay: 48h
     retentionInLocal: 24h
-    retentionResolution1h: 0d
-    retentionResolution5m: 180d
-    retentionResolutionRaw: 30d
+    retentionResolution1h: 30d
+    retentionResolution5m: 14d
+    retentionResolutionRaw: 5d
   storageConfig:
     alertmanagerStorageSize: 1Gi
     compactStorageSize: 1Gi
