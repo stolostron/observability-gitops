@@ -11,13 +11,6 @@ spec:
   observabilityAddonSpec:
     enableMetrics: true
     interval: 60
-    resources:
-      limits:
-        cpu: 100m
-        memory: 600Mi
-      requests:
-        cpu: 100m
-        memory: 100Mi
   retentionConfig:
     blockDuration: 2h
     cleanupInterval: 5m
