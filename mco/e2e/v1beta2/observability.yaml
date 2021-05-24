@@ -4,7 +4,14 @@ metadata:
   name: observability
   annotations:
 spec:
-  cacheConfig: {}
+  advanced:
+    retentionConfig:
+      blockDuration: 3h
+      cleanupInterval: 6m
+      retentionInLocal: 5d
+      retentionResolution1h: 31d
+      retentionResolution5m: 15d
+      retentionResolutionRaw: 6d
   nodeSelector:
     kubernetes.io/os: linux
   observabilityAddonSpec:
@@ -17,14 +24,6 @@ spec:
       requests:
         cpu: 200m
         memory: 200Mi
-  retentionConfig:
-    blockDuration: 3h
-    cleanupInterval: 6m
-    deleteDelay: 50h
-    retentionInLocal: 5d
-    retentionResolution1h: 31d
-    retentionResolution5m: 15d
-    retentionResolutionRaw: 6d
   storageConfig:
     alertmanagerStorageSize: 1Gi
     compactStorageSize: 1Gi
