@@ -3,6 +3,11 @@ kind: MultiClusterObservability
 metadata:
   name: observability
 spec:
+  advanced:
+    retentionConfig:
+      retentionResolution1h: 30d
+      retentionResolution5m: 14d
+      retentionResolutionRaw: 5d
   enableDownsampling: false
   imagePullPolicy: Always
   imagePullSecret: multiclusterhub-operator-pull-secret
@@ -11,14 +16,6 @@ spec:
   observabilityAddonSpec:
     enableMetrics: true
     interval: 60
-  retentionConfig:
-    blockDuration: 2h
-    cleanupInterval: 5m
-    deleteDelay: 48h
-    retentionInLocal: 24h
-    retentionResolution1h: 30d
-    retentionResolution5m: 14d
-    retentionResolutionRaw: 5d
   storageConfig:
     alertmanagerStorageSize: 1Gi
     compactStorageSize: 1Gi
