@@ -41,7 +41,7 @@ spec:
         limits:
           cpu: 1
           memory: 4Gi
-      replicas: 4
+      replicas: 2
     rule:
       resources:
         limits:
@@ -53,7 +53,7 @@ spec:
         limits:
           cpu: 1
           memory: 2Gi
-      replicas: 2
+      replicas: 3
     storeMemcached:
       resources:
         limits:
