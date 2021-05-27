@@ -13,6 +13,83 @@ spec:
       retentionResolution1h: 31d
       retentionResolution5m: 15d
       retentionResolutionRaw: 6d
+    observatoriumAPI:
+      resources:
+        limits:
+          cpu: 1
+          memory: 1Gi
+      replicas: 3
+    queryFrontend:
+      resources:
+        limits:
+          cpu: 1
+          memory: 1Gi
+      replicas: 3
+    query:
+      resources:
+        limits:
+          cpu: 1
+          memory: 1Gi
+      replicas: 3
+    compact:
+      resources:
+        limits:
+          cpu: 1
+          memory: 2Gi
+    receive:
+      resources:
+        limits:
+          cpu: 1
+          memory: 4Gi
+      replicas: 4
+    rule:
+      resources:
+        limits:
+          cpu: 1
+          memory: 1Gi
+      replicas: 1
+    store:
+      resources:
+        limits:
+          cpu: 1
+          memory: 2Gi
+      replicas: 2
+    storeMemcached:
+      resources:
+        limits:
+          cpu: 1
+          memory: 2Gi
+      replicas: 2
+      memoryLimitMb: 2048
+      maxItemSize: 2m
+      connectionLimit: 2048
+    queryFrontendMemcached:
+      resources:
+        limits:
+          cpu: 1
+          memory: 2Gi
+      replicas: 3
+      memoryLimitMb: 2048
+      maxItemSize: 2m
+      connectionLimit: 2048
+    grafana:
+      replicas: 3
+      resources:
+        limits:
+          cpu: 1
+          memory: 1Gi
+    alertmanager:
+      replicas: 2
+      resources:
+        limits:
+          cpu: 100m
+          memory: 400Mi
+    rbacQueryProxy:
+      replicas: 3
+      resources:
+        limits:
+          cpu: 50m
+          memory: 200Mi
   nodeSelector:
     kubernetes.io/os: linux
   observabilityAddonSpec:
@@ -25,14 +102,6 @@ spec:
       requests:
         cpu: 200m
         memory: 200Mi
-  retentionConfig:
-    blockDuration: 3h
-    cleanupInterval: 6m
-    deleteDelay: 50h
-    retentionInLocal: 5d
-    retentionResolution1h: 31d
-    retentionResolution5m: 15d
-    retentionResolutionRaw: 6d
   storageConfig:
     alertmanagerStorageSize: 1Gi
     compactStorageSize: 1Gi
