@@ -1,7 +1,7 @@
 
-> This branch is deprecated. It has been moved to https://github.com/open-cluster-management/multicluster-observability-operator as a sub-folder `examples`
+> This branch is deprecated. It has been moved to https://github.com/stolostron/multicluster-observability-operator as a sub-folder `examples`
 
-This repository contains [Open Cluster Management Observability](https://github.com/open-cluster-management/multicluster-observability-operator) examples of GitOps.
+This repository contains [Open Cluster Management Observability](https://github.com/stolostron/multicluster-observability-operator) examples of GitOps.
 
 ## Tool Requirements
 
